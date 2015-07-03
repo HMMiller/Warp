@@ -1,0 +1,14 @@
+﻿body
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    background-color:beige;
+}
+p
+{
+    font-family:'Times New Roman', Times, serif;
+    font-style:italic;
+    font-size:large;
+    font-variant-caps:small-caps;
+    background-color:beige;
+}

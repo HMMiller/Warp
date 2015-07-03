@@ -1,11 +1,11 @@
 ﻿namespace Forte
 
 open WebSharper
+open WebSharper.JavaScript
 open WebSharper.Sitelets
 open WebSharper.Html.Server
 
 module Warp =
-    
     type Endpoints = 
         | [<EndPoint "GET /">] Home
         | [<EndPoint "GET /about">] About
@@ -16,21 +16,30 @@ module Warp =
             match endpoint with
             | Endpoints.Home ->
                 Warp.Page(
+                    Head = 
+                         [
+                            Link [Rel "stylesheet"; Type "text/css"; HRef "stylesheet.css"]     
+                         ], 
                     Body =
                         [
-                            H1 [Text "Hello world!"]
+                            H1 [Text "Hello world from Warp!"]
                             "About" => Endpoints.About          
                         ]
-                 )
-            |Endpoints.About ->
+              )   
+              
+            | Endpoints.About ->
                 Warp.Page(
+                    Head = 
+                         [
+                            Link [Rel "stylesheet"; Type "text/css"; HRef "stylesheet.css"]     
+                         ],
                     Body =
                         [
-                            P [Text "This is a simple app"]
+                            P [Text "This is a simple apple"]
                             "Home" => Endpoints.Home
                         ]
                 )
             )
 
     [<EntryPoint>]
-    do Warp.RunAndWaitForInput(MySite) |> ignore
+    do Warp.RunAndWaitForInput(MySite, false, "http://warp.azurewebsites.net") |> ignore
