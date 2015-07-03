@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Warp", "Warp.fsproj", "{A2002C48-3159-4612-8E65-373FA65A652A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{04CD23AA-778B-4BDF-A09F-33C40F23B864}"
+	ProjectSection(SolutionItems) = preProject
+		paket.bootstrapper.exe = paket.bootstrapper.exe
+		paket.targets = paket.targets
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A2002C48-3159-4612-8E65-373FA65A652A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2002C48-3159-4612-8E65-373FA65A652A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2002C48-3159-4612-8E65-373FA65A652A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2002C48-3159-4612-8E65-373FA65A652A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
