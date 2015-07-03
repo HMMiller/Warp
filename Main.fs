@@ -42,4 +42,4 @@ module Warp =
             )
 
     [<EntryPoint>]
-    do Warp.RunAndWaitForInput(MySite, false, "http://warp.azurewebsites.net") |> ignore
+    do Warp.Run(MySite, false, "http://warp.azurewebsites.net") |> ignore
