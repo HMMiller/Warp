@@ -19,8 +19,7 @@ module Warp =
                     Body =
                         [
                             H1 [Text "Hello world!"]
-                            "About" => Endpoints.About
-                        
+                            "About" => Endpoints.About          
                         ]
                  )
             |Endpoints.About ->

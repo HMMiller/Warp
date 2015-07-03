@@ -7,6 +7,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Warp", "Warp.fsproj", "{A20
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{04CD23AA-778B-4BDF-A09F-33C40F23B864}"
 	ProjectSection(SolutionItems) = preProject
+		.deployment = .deployment
+		build.cmd = build.cmd
 		paket.bootstrapper.exe = paket.bootstrapper.exe
 		paket.targets = paket.targets
 	EndProjectSection
