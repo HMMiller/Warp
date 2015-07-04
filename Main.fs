@@ -4,6 +4,9 @@ open WebSharper
 open WebSharper.JavaScript
 open WebSharper.Sitelets
 open WebSharper.Html.Server
+open WebSharper.UI.Next
+open WebSharper.UI.Next.Templating
+
 
 module Warp =
     type Endpoints = 
@@ -18,7 +21,7 @@ module Warp =
                 Warp.Page(
                     Head = 
                          [
-                            Link [Rel "stylesheet"; Type "text/css"; HRef "stylesheet.css"]     
+                            Link [Rel "stylesheet"; Type "text/css"; HRef "stylesheet.css"]
                          ], 
                     Body =
                         [
@@ -42,4 +45,4 @@ module Warp =
             )
 
     [<EntryPoint>]
-    do Warp.Run(MySite, false, "http://warp.azurewebsites.net") |> ignore
+    do Warp.RunAndWaitForInput(MySite) |> ignore
